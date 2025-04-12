@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* To ensure the body can still scroll without showing a scrollbar */
+body {
+  overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Optional: If you want to hide the scrollbar on specific elements */
+.element {
+  overflow-y: scroll; /* Enables scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+.element::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+@media (min-width: 600px) {
+  .component {
+    font-size: 90%;
+    padding: 90%;
+    margin: 90%;
+  }
+}

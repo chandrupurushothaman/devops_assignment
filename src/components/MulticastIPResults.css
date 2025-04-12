@@ -1,0 +1,262 @@
+.result-form-container {
+  padding-top: 30px;
+  display: flex;
+  font-family: "Sky Text", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/public/pattern-randomized.svg') no-repeat center center/cover;
+}
+
+.result-form-title {
+  background: linear-gradient(to right, #ff6b00, #d6336c,#d6336c, #4266f5);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Card for Results */
+.result-form-card {
+  background-color: rgba(101, 94, 94, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(90, 89, 89, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section for IP Results */
+.results-section {
+  margin-bottom: 20px;
+  width: 48%;
+  text-align: center;
+}
+.results-sections-container {
+  display: flex;
+  justify-content: space-between; /* Add space between the two sections */
+  align-items: flex-start; /* Align the sections at the top */
+  gap: 10px; /* Space between the two sections */
+  width: 100%; /* Ensure container takes full width */
+  max-width: 600px; /* Limit width, adjust as needed */
+  padding: auto;
+}
+
+.red-ip-title {
+  font-size: 1.5rem;
+  color: #bd1111;
+  margin-bottom: 10px;
+}
+.blue-ip-title {
+  font-size: 1.5rem;
+  color: #0315da;
+  margin-bottom: 10px;
+}
+
+.ip-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  
+}
+
+.ip-item {
+  background-color: rgb(43, 42, 42); /* Adjusted for transparency */
+  font-size: large;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff; 
+  margin-bottom: 10px;
+}
+
+.result-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.result-save-button,
+.result-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.result-save-button {
+  background-color: #13932e;
+  color: white;
+}
+
+.result-cancel-button {
+  background-color: rgba(237, 22, 22, 0.8);
+  color: white;
+}
+
+.result-save-button:hover {
+  background-color: #3f3f40;
+}
+
+.result-cancel-button:hover {
+  background-color: rgba(200, 20, 20, 0.8); /* Darker on hover */
+}
+.greeting {
+  font-size: 1.2rem;
+  font-family: "Sky Text", sans-serif;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.greeting em {
+  font-style: italic;
+  color: #ff6b00;
+}
+
+.ip-name-input {
+  width: 80%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ip-dropdown{
+  width: 70%;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+/* Date Picker Container */
+.ip-datepicker {
+  width: 90%; /* Full width */
+  padding: 5px; /* Padding for better touch targets */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Background color */
+  font-size: 0.9rem; /* Font size */
+  color: #333; /* Text color */
+  text-align: center;
+}
+
+/* Date Picker Input */
+.react-datepicker__input-container {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+/* Date Picker Calendar */
+.react-datepicker {
+  background-color: rgba(255, 255, 255, 0.95); /* Background color of calendar */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Header styles */
+.react-datepicker__header {
+  background-color: #4266f5; /* Header background color */
+  color: white; /* Header text color */
+  border: none; /* Remove default border */
+}
+
+/* Day styles */
+.react-datepicker__day {
+  display: inline-flex; /* Flexbox for alignment */
+  justify-content: center; /* Center text */
+  align-items: center; /* Center text */
+  width: 38px; /* Fixed width for day buttons */
+  height: 38px; /* Fixed height for day buttons */
+  line-height: 38px; /* Center text vertically */
+  border-radius: 50%; /* Circular buttons */
+  transition: background-color 0.2s; /* Smooth transition */
+}
+
+/* Day hover effect */
+.react-datepicker__day:hover {
+  background-color: rgba(66, 102, 245, 0.2); /* Light blue background on hover */
+}
+
+/* Selected day styles */
+.react-datepicker__day--selected {
+  background-color: #4266f5; /* Selected day background color */
+  color: white; /* Selected day text color */
+}
+
+/* Today’s date styles */
+.react-datepicker__day--today {
+  font-weight: bold; /* Make today's date bold */
+}
+
+/* Month and Year dropdown styles */
+.react-datepicker__select {
+  border: 1px solid #ccc; /* Border for dropdowns */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px; /* Padding */
+}
+
+/* Close button styles */
+.react-datepicker__close {
+  background-color: #dc3545; /* Close button color */
+  color: white; /* Close button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding */
+}
+
+/* Close button hover effect */
+.react-datepicker__close:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+.custom-date-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.custom-date-input:hover {
+  background-color: rgb(255, 254, 254); /* Light blue on hover */
+}
+
+.ip-delete-button {
+  background-color: #dc3545; /* Red color */
+  color: white; /* White text color */
+  padding: 5px; /* Padding for better touch targets */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 0.9rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+  margin-top: 8px; /* Space between date input and delete button */
+  width: 60%; 
+}
+
+.ip-delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

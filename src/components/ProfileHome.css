@@ -1,0 +1,43 @@
+.title {
+  font-size: 3rem;
+  font-family: "Sky Text", sans-serif;
+  background: linear-gradient(to right, #ff6b00, #d6336c,#d6336c, #4266f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.username {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.welcome-message {
+  font-size: 3rem; 
+  margin: 0;
+  line-height: 1.1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: url('/public/pattern-randomized.svg') no-repeat center center/cover;
+}
+
+.profile-form-card {
+  background-color: rgba(97, 89, 89, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+}
